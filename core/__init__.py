@@ -1,0 +1,1 @@
+"""Capsule core package."""

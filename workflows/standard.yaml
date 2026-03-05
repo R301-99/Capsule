@@ -1,0 +1,17 @@
+workflow:
+  id: "workflow.standard"
+  nodes:
+    - id: "architect"
+      role: "role.architect"
+      action: "produce_contracts"
+      human_review: true
+    - id: "qa"
+      role: "role.qa"
+      action: "produce_behavior"
+    - id: "coder_backend"
+      role: "role.coder_backend"
+      action: "implement"
+    - id: "architect_review"
+      role: "role.architect"
+      action: "review"
+      human_review: true

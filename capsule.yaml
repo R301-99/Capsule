@@ -1,0 +1,13 @@
+capsule:
+  project_id: "my-saas-app"
+  workflow: "workflows/standard.yaml"
+  executor:
+    type: "codex_cli"
+    codex_command: "codex"
+    timeout_seconds: 300
+  test_runner:
+    timeout_seconds: 120
+  global_conventions:
+    api_prefix: "/api/v1"
+    auth_method: "JWT"
+    test_runner: "pytest"
